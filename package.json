@@ -2,7 +2,10 @@
   "name": "test-1st-project",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "test": "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

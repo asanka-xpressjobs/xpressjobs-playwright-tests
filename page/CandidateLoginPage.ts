@@ -15,7 +15,9 @@ export class LoginPage {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto('https://xpress.jobs/candidates/login');
+    await this.page.goto(
+      process.env.VALID_LOGIN_PAGE_URL ?? 'https://xpress.jobs/candidates/login'
+    );
   }
 
   async login(email: string | null, password: string | null): Promise<void> {
